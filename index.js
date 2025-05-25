@@ -37,8 +37,7 @@ let gameStartTime = null;
 function formatElapsedTime(startTime) {
   const elapsedMs = Date.now() - startTime;
   const minutes = Math.floor(elapsedMs / 60000);
-  const seconds = Math.floor((elapsedMs % 60000) / 1000);
-  return `(for ${minutes}m ${seconds}s)`;
+  return `(for ${minutes}m)`;
 }
 
 async function getNowPlaying(username) {
@@ -149,6 +148,7 @@ async function updateStatus() {
 function updateStatusLoop() {
   setInterval(updateStatus, UPDATE_INTERVAL_MS);
 }
+
 
 client.once("ready", async () => {
   console.log(`✅ Logged in as ${client.user.username}`);
