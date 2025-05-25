@@ -124,6 +124,25 @@ Please feel free to submit a [Pull Request](https://github.com/Asraye/RevoltRPC-
 
 ---
 
+### Getting Your Revolt User Token
+
+To get your user token from the browser:
+
+1. Open [Revolt](https://app.revolt.chat) in your browser.
+2. Press <kbd>F12</kbd> to open Developer Tools (or right-click → Inspect).
+3. Go to the **Console** tab.
+4. Paste and run the following code:
+
+    ```js
+    window.state.auth.sessions.get(controllers.client.getReadyClient().user._id).session.token
+    ```
+
+5. Copy the output string — this is your user token.
+
+⚠️ **Never share this token** 
+
+---
+
 ## Troubleshooting
 
 - **Status does not update?**  
