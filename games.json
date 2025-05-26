@@ -80,5 +80,13 @@
     { "exe": "Sally Face.exe", "name": "Sally Face" },
     { "exe": "SpaceEngineers.exe", "name": "Space Engineers" },
     { "exe": "launcher.exe", "name": "Splitgate 2" },
-    { "exe": "thief.exe", "name": "Thief Simulator" }
+    { "exe": "thief.exe", "name": "Thief Simulator" },
+    { "exe": "ULTRAKILL.exe", "name": "ULTRAKILL" },
+    { "exe": "UntilThen.exe", "name": "Until Then" },
+    { "exe": "TheCrew2.exe", "name": "The Crew 2" },
+    { "exe": "hl2.exe", "name": "Half-Life 2" },
+    { "exe": "hl.exe", "name": "Half-Life" },
+    { "exe": "bms.exe", "name": "Black Mesa" },
+    { "exe": "TOXIKK.exe", "name": "TOXIKK" },
+    { "exe": "Quaver.exe", "name": "Quaver" }
 ]
