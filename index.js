@@ -37,8 +37,15 @@ let gameStartTime = null;
 function formatElapsedTime(startTime) {
   const elapsedMs = Date.now() - startTime;
   const minutes = Math.floor(elapsedMs / 60000);
-  return `(for ${minutes}m)`;
+  const seconds = Math.floor((elapsedMs % 60000) / 1000);
+
+  if (minutes > 0) {
+    return `(for ${minutes}m)`;
+  } else {
+    return `(for ${seconds}s)`;
+  }
 }
+
 
 async function getNowPlaying(username) {
   const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${config.lastfm.apiKey}&format=json&limit=1`;
